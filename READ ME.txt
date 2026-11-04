@@ -1,0 +1,14 @@
+HYBRUTOS RACING WEBSITE
+
+1. Extract the entire ZIP first.
+2. Open the Hybrutos-Racing-Website folder.
+3. Double-click index.html to view the website in a browser.
+
+Keep all files and folders together. Share the entire ZIP, not index.html alone.
+Internet access is needed for Google fonts and social-media links.
+The contact form opens the visitor's email app; it does not send email directly.
+
+Packaging notes:
+- Contact email corrected to hybrutosracing@gmail.com.
+- Missing img/team.jpg image hidden; no replacement photo was supplied.
+- Other supplied page content and styling retained.

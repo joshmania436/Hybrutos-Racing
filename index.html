@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hybrutos Racing</title>
+<meta name="description" content="Hybrutos Racing: a student engineering team that designs, builds and races a hybrid-powered car.">
+<meta name="theme-color" content="#08050E">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Archivo:wght@400;500;700&family=Racing+Sans+One&family=Oswald:wght@400;500&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="rev"></div>
+<div id="wheel" aria-hidden="true"><svg viewBox="0 0 64 64"><g id="tyre"><circle cx="32" cy="32" r="31" fill="#0b0813" stroke="#3b2a63" stroke-width="1.5"/><circle cx="32" cy="32" r="27.5" fill="none" stroke="#241a3a" stroke-width="5" stroke-dasharray="5 3"/><path d="M32 6.5a25.5 25.5 0 0 1 22 12.5" fill="none" stroke="#D2A8FF" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="32" r="18" fill="#161026" stroke="#8A3FFC" stroke-width="2"/><path d="M32 16v8M32 40v8M16 32h8M40 32h8M20.7 20.7l5.7 5.7M37.6 37.6l5.7 5.7M43.3 20.7l-5.7 5.7M26.4 37.6l-5.7 5.7" stroke="#D2A8FF" stroke-width="2.2" stroke-linecap="round"/><circle cx="32" cy="32" r="5" fill="#8A3FFC"/><circle cx="32" cy="32" r="1.8" fill="#0b0813"/></g></svg></div>
+<div id="speedo" aria-hidden="true"><svg viewBox="0 0 120 98"><defs><linearGradient id="sg" x1="0" x2="1"><stop offset="0" stop-color="#8A3FFC"/><stop offset="1" stop-color="#D2A8FF"/></linearGradient></defs><path d="M12 64A48 48 0 0 1 108 64" fill="none" stroke="rgba(241,236,250,.3)" stroke-width="7" stroke-dasharray="1.6 7.3"/><path id="sarc" d="M12 64A48 48 0 0 1 108 64" fill="none" stroke="url(#sg)" stroke-width="3" stroke-linecap="round" pathLength="100" stroke-dasharray="0 100"/><line id="sneedle" x1="60" y1="64" x2="60" y2="26" stroke="#D2A8FF" stroke-width="2.4" stroke-linecap="round" transform="rotate(-90 60 64)"/><circle cx="60" cy="64" r="4.5" fill="#8A3FFC"/><text id="snum" x="60" y="86" text-anchor="middle" font-size="20" font-weight="800" fill="#F1ECFA" style="font-family:var(--display)">0</text><text x="60" y="96" text-anchor="middle" font-size="7" letter-spacing="2" fill="#A99DC2" style="font-family:var(--body)">KM/H</text></svg></div>
+<nav><div class="wrap">
+  <a class="logo" href="#home" aria-label="Hybrutos Racing home"><img src="logo.png" alt="Hybrutos Racing" width="82" height="30"></a>
+  <ul><li><a href="#home">Home</a></li><li><a href="#car">The car</a></li><li><a href="#teams">Teams</a></li><li><a href="#goal">Our goal</a></li><li><a href="#achievements">Achievements</a></li><li><a href="#sponsors">Sponsors</a></li><li><a class="ext" href="brochure.pdf" target="_blank" rel="noopener" id="brochure-link">Brochure &#8599;</a></li><li><a href="#contact">Contact</a></li></ul>
+</div></nav>
+
+<div class="page" id="p-home"><header class="hero" id="top"><div class="wrap">
+  <h1 aria-label="Hybrutos Racing"><span><em class="split">Hybrutos</em></span><span><em>Racing</em></span></h1>
+  <p class="slogan">One team <i>&middot;</i> One dream <i>&middot;</i> One car</p>
+  <p class="tag">A student-led team from SRM University, Chennai, designing, building and racing Hybrid Formula Student cars.</p>
+  <div><a class="cta" href="#contact">Join the team</a><a class="cta alt" href="#car">See the car</a></div>
+</div>
+<div class="track" aria-hidden="true">
+  <div class="car">
+    <span class="streak a"></span><span class="streak b"></span>
+    <svg viewBox="0 0 400 110" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 78 L120 70 L150 46 L196 40 L214 24 L252 24 L262 44 L330 56 L372 72 L372 82 L20 86Z" fill="var(--fire)"/>
+      <path d="M150 46 L196 40 L214 24 L252 24 L262 44 L330 56 L372 72 L255 66 L170 62Z" fill="var(--ink)" opacity=".16"/>
+      <path d="M205 40 Q228 14 252 26" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+      <rect x="4" y="58" width="42" height="7" rx="2" fill="var(--ink)"/><rect x="14" y="65" width="5" height="16" fill="var(--ink)"/>
+      <rect x="352" y="80" width="46" height="6" rx="2" fill="var(--volt)"/>
+      <rect x="290" y="70" width="64" height="6" rx="2" fill="var(--volt)"/>
+      <g><circle cx="84" cy="88" r="21" fill="#000" stroke="var(--volt)" stroke-width="3"/><g class="wheel"><circle cx="84" cy="88" r="11" fill="var(--bg)"/><path d="M84 78v20M74 88h20" stroke="var(--ink)" stroke-width="3"/></g></g>
+      <g><circle cx="318" cy="88" r="21" fill="#000" stroke="var(--volt)" stroke-width="3"/><g class="wheel"><circle cx="318" cy="88" r="11" fill="var(--bg)"/><path d="M318 78v20M308 88h20" stroke="var(--ink)" stroke-width="3"/></g></g>
+    </svg>
+  </div>
+  <div class="road"></div>
+</div></header>
+
+<section id="about"><div class="wrap about">
+  <div>
+    <h2>Two kinds of power. One car.</h2>
+    <p class="lead" style="margin-top:28px">We are students who turn lectures into lap times.</p>
+  </div>
+  <div class="two">
+    <div><h3>Combustion</h3><p>A tuned engine that delivers the raw pull off the line.</p></div>
+    <div><h3>Electric</h3><p>A motor and battery pack that add torque and recover energy under braking.</p></div>
+    <p>Our engineers come from many disciplines. We compete in Formula Hybrid (USA) and Formula Imperial (India).</p>
+  </div>
+</div></section>
+
+</div>
+<div class="page" id="p-car"><section class="car-sec" id="car"><div class="wrap">
+  <div>
+    <h2>The car</h2>
+    <p style="margin-top:20px;opacity:.8">Our current build, at a glance.</p>
+  </div>
+  <ul class="specs">
+    <li><span>Powertrain</span><span>RC200 engine, Agni 119R motor</span></li>
+    <li><span>Speed</span><span>110 km/h (theoretical)</span></li>
+    <li><span>Weight</span><span>290 kg</span></li>
+    <li><span>0&ndash;100 km/h</span><span>Not tested yet</span></li>
+  </ul>
+</div></section>
+
+</div>
+<div class="page" id="p-teams"><section class="teams" id="teams"><div class="wrap">
+  <h2 style="margin-bottom:44px">Sub-teams</h2>
+  <details open><summary>Powertrain</summary><p>The heart of our car. Runs a hybrid powertrain. Including a RC200 engine and an Agni 119R motor. 
+Coupled by our very own patented coupler.</p></details>
+  <details><summary>Chassis and suspension</summary><p>The skeleton and the muscle. Our chassis is a compact tubular chassis which helps house all the systems to run the car including the driver. The suspension system is what decides how our car reacts to turning and accelerating. </p></details>
+  <details><summary>Electronics</summary><p>The electronics of the car make split second decisions from taking in input from the driver to giving output to the wheels to saving a life in case of any catastrophic failure. In short, electronics is the brain of the car and fuelling it all is a big hybrid battery!</p></details>
+  <details><summary>Aero and design</summary><p>The package that brings grip and efficiency in style. The Aerodynamic components help add more downforce and grip to the car while also reducing drag and increasing efficiency of the car.</p></details>
+  <details><summary>Business and media</summary><p>“Sell me this car” and outreach under one roof. The business models are born here, talking numbers and graphs. Media is what makes us known to the world, from social media posts to website design.</p></details>
+</div></section>
+
+</div>
+<div class="page" id="p-goal"><section><div class="wrap">
+  <h2>Our goal</h2>
+  <p class="lead" style="margin-top:24px">One team. One dream. One car.</p>
+  <div class="goals"><div><h3>A light, efficient car</h3><p>Every kilogram and every watt counts, so we design for low weight and high efficiency.</p></div><div><h3>An integrated hybrid powertrain</h3><p>A combustion engine and an electric motor working together as one system.</p></div><div><h3>Compete at the top</h3><p>Participating in competitions in India and abroad</p></div><div><h3>Sustainable motorsport</h3><p>Push the boundaries of innovation while giving students real engineering experience.</p></div></div>
+  <h2>Season roadmap</h2>
+  <div class="line">
+    <div><h3>Design</h3><p>Concepts, Solidworks and simulation.</p></div>
+    <div><h3>Build</h3><p>Fabrication and assembly.</p></div>
+    <div><h3>Test</h3><p>Track tuning and driver training.</p></div>
+    <div><h3>Race</h3><p>Competition day.</p></div>
+  </div>
+</div></section></div>
+<div class="page" id="p-achievements"><section><div class="wrap">
+  <h2>Our achievements</h2>
+  <p style="margin-top:8px">Over the years, Hybrutos Racing has earned awards at Formula Hybrid (USA) and Formula Imperial (India).</p>
+  <div class="years" id="years" role="tablist" aria-label="Year"></div>
+  <div class="ach" id="ach"><img id="aimg" alt="Hybrutos Racing car"><div><h3 id="atitle"></h3><div id="alist"></div></div></div>
+  <p class="foot">Also awarded: the GM Spirit Award at Formula Hybrid.</p>
+</div></section></div>
+<div class="page" id="p-sponsors"><section><div class="wrap">
+  <h2>Sponsors</h2>
+  <p class="lead" style="margin-top:24px">Back the team and put your name on a race car.</p>
+  <div class="tiers"><article class="tier t1"><span>Reserved for financial sponsors</span><h3>Tier 1</h3><ul><li>3 Instagram posts and 2 LinkedIn posts</li><li>Top-tier logo placement on the car livery, including the rear wing and nose cone</li><li>Logo on all team apparel: t-shirts, hoodies and caps</li><li>Logo across team assets: the car, pit banners, posters and digital content</li><li>Mentions in public presentations, interviews and media coverage</li><li>Product exhibition at every competition arena</li><li>Exclusive logo banner at team promotional events</li></ul></article><article class="tier "><span>Sponsorship</span><h3>Tier 2</h3><ul><li>2 Instagram posts about the partnership</li><li>1 LinkedIn post on the collaboration and your role in our progress</li><li>Prominent logo on primary car panels such as the side body and rear wing</li><li>Logo on all official team merchandise</li></ul></article><article class="tier "><span>Sponsorship</span><h3>Tier 3</h3><ul><li>1 Instagram post highlighting the partnership</li><li>Modest logo on the side pod of the car</li><li>Logo on team apparel at events and public appearances</li><li>Logo on the driver's suit</li></ul></article></div>
+  <a class="cta" href="#contact">Become a sponsor</a>
+</div></section></div>
+<div class="page" id="p-contact"><section><div class="wrap contact">
+  <div>
+    <h2>Contact us</h2>
+    <p class="lead" style="margin-top:24px">Questions, sponsorship or want to join? Send us a message.</p>
+    <ul class="cl"><li><span>Email</span><a href="mailto:hybrutosracing@gmail.com">hybrutosracing@gmail.com</a></li><li><span>Where</span>SRM University, Chennai</li><li><span>Follow</span><div class="social"><a href="https://www.instagram.com/hybrutosracing/" target="_blank" rel="noopener noreferrer" aria-label="Hybrutos Racing on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/company/hybrutos-racing/home/" target="_blank" rel="noopener noreferrer" aria-label="Hybrutos Racing on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.84 2.67 4.84 6.14V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4z"/></svg></a></div></li></ul>
+    <img class="team" src="img/team.jpg" alt="The Hybrutos Racing team with the car" loading="lazy">
+  </div>
+  <!--
+  <form id="cf">
+    <label>Your name<input name="n" required></label>
+    <label>Your email<input type="email" name="e" required></label>
+    <label>I am contacting about<select name="t"><option>Joining the team</option><option>Sponsorship</option><option>Something else</option></select></label>
+    <label>Message<textarea name="m" rows="5" required></textarea></label>
+    <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+    <button class="cta" type="submit">Send message</button>
+    <p class="note" id="cn"></p>
+  </form>
+-->
+</div></section></div>
+<footer><div class="wrap"><span class="flogo"><img src="logo.png" alt="" width="66" height="24"><span>© 2026 Hybrutos Racing</span></span><span class="social sm"><a href="https://www.instagram.com/hybrutosracing/" target="_blank" rel="noopener noreferrer" aria-label="Hybrutos Racing on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/company/hybrutos-racing/home/" target="_blank" rel="noopener noreferrer" aria-label="Hybrutos Racing on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.84 2.67 4.84 6.14V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4z"/></svg></a></span><span>Built by students, for the track.</span></div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
