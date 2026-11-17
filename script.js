@@ -1,11 +1,13 @@
 (function(){
   var bar=document.getElementById('rev');
+  if(!bar)return;
   function p(){var h=document.documentElement;var s=h.scrollHeight-h.clientHeight;bar.style.width=(s>0?h.scrollTop/s*100:0)+'%'}
   addEventListener('scroll',p,{passive:true});p();
 })();
 
 (function(){
   var names=['home','car','teams','goal','achievements','sponsors','contact'];
+  if(!document.getElementById('p-home'))return;
   function show(h){
     if(!h)h=(location.hash||'').slice(1);
     if(names.indexOf(h)<0)h='home';
@@ -31,7 +33,7 @@
     2021:{img:'img/2021.jpg',a:[['Formula Hybrid','Podium finish']]},
     2020:{img:'img/2020.jpg',a:[['Formula Hybrid','Podium finish'],['Formula Hybrid','Best Engineering Design']]},
     2019:{img:'img/2019.jpg',a:[['Formula Imperial','2nd overall, Hybrid category'],['Formula Imperial','Best Hybrid Car, 1st in Static Events'],['Formula Imperial','Best B-Plan, Cost, Design and Endurance Runner-Up']]},
-    2018:{img:'img/2018.jpg',a:[]},
+    2018:{img:'img/2018.jpg',a:[['Formula Hybrid','Promising performance by the team']]},
     2017:{img:L,pos:'72%',a:[['Formula Hybrid','Podium finish']]},
     2016:{img:L,pos:'100%',a:[['Formula Hybrid','1st, Hybrid in Progress']]}
   };
